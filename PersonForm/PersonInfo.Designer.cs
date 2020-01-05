@@ -37,13 +37,12 @@
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.UpdatePerson = new System.Windows.Forms.Button();
 			this.Delete = new System.Windows.Forms.Button();
+			this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this.emailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -96,13 +95,14 @@
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn});
-			this.dataGridView1.DataSource = this.personBindingSource1;
-			this.dataGridView1.Location = new System.Drawing.Point(209, 144);
+            this.nameDataGridViewTextBoxColumn,
+            this.emailsDataGridViewTextBoxColumn});
+			this.dataGridView1.DataSource = this.personBindingSource;
+			this.dataGridView1.Location = new System.Drawing.Point(142, 144);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(368, 211);
+			this.dataGridView1.Size = new System.Drawing.Size(509, 211);
 			this.dataGridView1.TabIndex = 5;
 			// 
 			// UpdatePerson
@@ -125,6 +125,10 @@
 			this.Delete.UseVisualStyleBackColor = true;
 			this.Delete.Click += new System.EventHandler(this.Delete_Click);
 			// 
+			// personBindingSource
+			// 
+			this.personBindingSource.DataSource = typeof(DataModel.Person);
+			// 
 			// idDataGridViewTextBoxColumn
 			// 
 			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -137,13 +141,11 @@
 			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
 			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
 			// 
-			// personBindingSource
+			// emailsDataGridViewTextBoxColumn
 			// 
-			this.personBindingSource.DataSource = typeof(DataModel.Person);
-			// 
-			// personBindingSource1
-			// 
-			this.personBindingSource1.DataSource = typeof(DataModel.Person);
+			this.emailsDataGridViewTextBoxColumn.DataPropertyName = "Emails";
+			this.emailsDataGridViewTextBoxColumn.HeaderText = "Emails";
+			this.emailsDataGridViewTextBoxColumn.Name = "emailsDataGridViewTextBoxColumn";
 			// 
 			// PersonInfo
 			// 
@@ -163,7 +165,6 @@
 			this.Load += new System.EventHandler(this.PersonInfo_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -177,12 +178,12 @@
 		private System.Windows.Forms.TextBox txtName;
 		private System.Windows.Forms.Button Add;
 		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource personBindingSource;
 		private System.Windows.Forms.Button UpdatePerson;
 		private System.Windows.Forms.Button Delete;
-		private System.Windows.Forms.BindingSource personBindingSource1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDataGridViewTextBoxColumn;
+		private System.Windows.Forms.BindingSource personBindingSource;
 	}
 }
 
