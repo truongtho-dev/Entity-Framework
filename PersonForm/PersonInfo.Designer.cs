@@ -40,7 +40,7 @@
 			this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.emailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
 			this.SuspendLayout();
@@ -96,7 +96,7 @@
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.emailsDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn1});
 			this.dataGridView1.DataSource = this.personBindingSource;
 			this.dataGridView1.Location = new System.Drawing.Point(142, 144);
 			this.dataGridView1.Name = "dataGridView1";
@@ -141,11 +141,11 @@
 			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
 			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
 			// 
-			// emailsDataGridViewTextBoxColumn
+			// dataGridViewTextBoxColumn1
 			// 
-			this.emailsDataGridViewTextBoxColumn.DataPropertyName = "Emails";
-			this.emailsDataGridViewTextBoxColumn.HeaderText = "Emails";
-			this.emailsDataGridViewTextBoxColumn.Name = "emailsDataGridViewTextBoxColumn";
+			this.dataGridViewTextBoxColumn1.DataPropertyName = "Emails";
+			this.dataGridViewTextBoxColumn1.HeaderText = "Emails";
+			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
 			// 
 			// PersonInfo
 			// 
@@ -180,9 +180,10 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button UpdatePerson;
 		private System.Windows.Forms.Button Delete;
+		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
 		private System.Windows.Forms.BindingSource personBindingSource;
 	}
 }

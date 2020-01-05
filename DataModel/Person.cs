@@ -11,8 +11,6 @@ namespace DataModel
 		public int Id { get; set; }
 		public string Name { get; set; }
 		public ICollection<Email> Emails { get; set; }
-		
-
 	}
 
 	public class Email
@@ -20,16 +18,16 @@ namespace DataModel
 		public int Id { get; set; }
 		public string EmailAddress { get; set; }
 
-		public int PersonId { get; set; } // FK = Nav property + ID of person
+		public int PersonId { get; set; } // FK = Nav property + Id of Person
 		public Person Person { get; set; }
 	}
 	public class DemoContext: DbContext
 	{
 		public DemoContext(): base("demo") {
 			Database.SetInitializer(new DbInitializer());
-		}
-		
+		}		
 		public virtual DbSet<Person> People { get; set; }
+		public virtual DbSet<Email> Emails { get; set; }
 	}
 	
 }

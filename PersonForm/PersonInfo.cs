@@ -18,14 +18,20 @@ namespace PersonForm
 			InitializeComponent();
 		}
 
+		private BindingSource bindingSource1 = new BindingSource();
+
 		private void PersonInfo_Load(object sender, EventArgs e)
 		{
 			dataGridView1.ReadOnly = true;
+			
 			using (var context = new DemoContext())
 			{
-				dataGridView1.DataSource = context.People.ToList();
+				var query = context.People.Include(p => p.Emails).ToList();
+				bindingSource1.Add(query);
+				
 				dataGridView1.MultiSelect = false;
 				dataGridView1.RowEnter += DataGridView1_RowEnter;
+				
 			}
 		}
 		private void txtId_TextChanged(object sender, EventArgs e)
@@ -121,4 +127,4 @@ namespace PersonForm
 	}
 }
 
-// im in develop
+
