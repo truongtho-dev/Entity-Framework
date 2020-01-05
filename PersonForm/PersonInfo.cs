@@ -83,6 +83,7 @@ namespace PersonForm
 							context.People.Add(person);
 							context.SaveChanges();
 							MessageBox.Show($"You are input name: {textName} with id: {context.People.Max(p=>p.Id)}");
+					
 							dataGridView1.DataSource = context.People.ToList();
 						}
 					}
@@ -117,3 +118,5 @@ namespace PersonForm
 		}
 	}
 }
+
+// im in develop
