@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtId = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -38,11 +39,22 @@
 			this.UpdatePerson = new System.Windows.Forms.Button();
 			this.Delete = new System.Windows.Forms.Button();
 			this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.label3 = new System.Windows.Forms.Label();
+			this.txtEmail = new System.Windows.Forms.TextBox();
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.emailsDisplayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.label4 = new System.Windows.Forms.Label();
+			this.txtNameToFind = new System.Windows.Forms.TextBox();
+			this.emailFoundCbx = new System.Windows.Forms.ComboBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.button3 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
+			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -81,7 +93,7 @@
 			// 
 			// Add
 			// 
-			this.Add.Location = new System.Drawing.Point(197, 105);
+			this.Add.Location = new System.Drawing.Point(221, 142);
 			this.Add.Name = "Add";
 			this.Add.Size = new System.Drawing.Size(75, 23);
 			this.Add.TabIndex = 4;
@@ -96,20 +108,21 @@
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn1});
+            this.emailsDisplayDataGridViewTextBoxColumn});
 			this.dataGridView1.DataSource = this.personBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(142, 144);
+			this.dataGridView1.Location = new System.Drawing.Point(136, 237);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(509, 211);
+			this.dataGridView1.Size = new System.Drawing.Size(580, 379);
 			this.dataGridView1.TabIndex = 5;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
 			// UpdatePerson
 			// 
-			this.UpdatePerson.Location = new System.Drawing.Point(328, 105);
+			this.UpdatePerson.Location = new System.Drawing.Point(328, 142);
 			this.UpdatePerson.Name = "UpdatePerson";
-			this.UpdatePerson.Size = new System.Drawing.Size(112, 23);
+			this.UpdatePerson.Size = new System.Drawing.Size(67, 23);
 			this.UpdatePerson.TabIndex = 6;
 			this.UpdatePerson.Text = "Update";
 			this.UpdatePerson.UseVisualStyleBackColor = true;
@@ -117,7 +130,7 @@
 			// 
 			// Delete
 			// 
-			this.Delete.Location = new System.Drawing.Point(502, 105);
+			this.Delete.Location = new System.Drawing.Point(435, 142);
 			this.Delete.Name = "Delete";
 			this.Delete.Size = new System.Drawing.Size(75, 23);
 			this.Delete.TabIndex = 7;
@@ -128,6 +141,22 @@
 			// personBindingSource
 			// 
 			this.personBindingSource.DataSource = typeof(DataModel.Person);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(218, 96);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(77, 17);
+			this.label3.TabIndex = 8;
+			this.label3.Text = "Input Email";
+			// 
+			// txtEmail
+			// 
+			this.txtEmail.Location = new System.Drawing.Point(328, 93);
+			this.txtEmail.Name = "txtEmail";
+			this.txtEmail.Size = new System.Drawing.Size(182, 22);
+			this.txtEmail.TabIndex = 9;
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -141,17 +170,101 @@
 			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
 			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
 			// 
-			// dataGridViewTextBoxColumn1
+			// emailsDisplayDataGridViewTextBoxColumn
 			// 
-			this.dataGridViewTextBoxColumn1.DataPropertyName = "Emails";
-			this.dataGridViewTextBoxColumn1.HeaderText = "Emails";
-			this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+			this.emailsDisplayDataGridViewTextBoxColumn.DataPropertyName = "EmailsDisplay";
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.emailsDisplayDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+			this.emailsDisplayDataGridViewTextBoxColumn.HeaderText = "Emails Display";
+			this.emailsDisplayDataGridViewTextBoxColumn.Name = "emailsDisplayDataGridViewTextBoxColumn";
+			this.emailsDisplayDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// groupBox1
+			// 
+			this.groupBox1.Controls.Add(this.button3);
+			this.groupBox1.Controls.Add(this.label5);
+			this.groupBox1.Controls.Add(this.emailFoundCbx);
+			this.groupBox1.Controls.Add(this.txtNameToFind);
+			this.groupBox1.Controls.Add(this.label4);
+			this.groupBox1.Controls.Add(this.button2);
+			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Location = new System.Drawing.Point(872, 12);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(427, 303);
+			this.groupBox1.TabIndex = 10;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Emails";
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(120, 158);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(52, 23);
+			this.button1.TabIndex = 0;
+			this.button1.Text = "Edit";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(193, 158);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(67, 23);
+			this.button2.TabIndex = 1;
+			this.button2.Text = "Delete";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(63, 22);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(80, 17);
+			this.label4.TabIndex = 2;
+			this.label4.Text = "Input Name";
+			// 
+			// txtNameToFind
+			// 
+			this.txtNameToFind.Location = new System.Drawing.Point(163, 16);
+			this.txtNameToFind.Name = "txtNameToFind";
+			this.txtNameToFind.Size = new System.Drawing.Size(111, 22);
+			this.txtNameToFind.TabIndex = 3;
+			// 
+			// emailFoundCbx
+			// 
+			this.emailFoundCbx.FormattingEnabled = true;
+			this.emailFoundCbx.Location = new System.Drawing.Point(163, 103);
+			this.emailFoundCbx.Name = "emailFoundCbx";
+			this.emailFoundCbx.Size = new System.Drawing.Size(119, 24);
+			this.emailFoundCbx.TabIndex = 4;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(90, 110);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(42, 17);
+			this.label5.TabIndex = 5;
+			this.label5.Text = "Email";
+			// 
+			// button3
+			// 
+			this.button3.Location = new System.Drawing.Point(287, 15);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(75, 23);
+			this.button3.TabIndex = 8;
+			this.button3.Text = "Find";
+			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// PersonInfo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1371, 657);
+			this.Controls.Add(this.groupBox1);
+			this.Controls.Add(this.txtEmail);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.Delete);
 			this.Controls.Add(this.UpdatePerson);
 			this.Controls.Add(this.dataGridView1);
@@ -165,6 +278,8 @@
 			this.Load += new System.EventHandler(this.PersonInfo_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -181,10 +296,20 @@
 		private System.Windows.Forms.Button UpdatePerson;
 		private System.Windows.Forms.Button Delete;
 		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDataGridViewTextBoxColumn;
+		private System.Windows.Forms.BindingSource personBindingSource;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox txtEmail;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-		private System.Windows.Forms.BindingSource personBindingSource;
+		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDisplayDataGridViewTextBoxColumn;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.ComboBox emailFoundCbx;
+		private System.Windows.Forms.TextBox txtNameToFind;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Label label5;
 	}
 }
 

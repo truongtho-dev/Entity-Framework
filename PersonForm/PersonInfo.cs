@@ -18,7 +18,7 @@ namespace PersonForm
 			InitializeComponent();
 		}
 
-		private BindingSource bindingSource1 = new BindingSource();
+		
 
 		private void PersonInfo_Load(object sender, EventArgs e)
 		{
@@ -26,12 +26,10 @@ namespace PersonForm
 			
 			using (var context = new DemoContext())
 			{
-				var query = context.People.Include(p => p.Emails).ToList();
-				bindingSource1.Add(query);
-				
+				dataGridView1.DataSource = context.People.Include(p=>p.Emails).ToList();
 				dataGridView1.MultiSelect = false;
 				dataGridView1.RowEnter += DataGridView1_RowEnter;
-				
+
 			}
 		}
 		private void txtId_TextChanged(object sender, EventArgs e)
@@ -52,11 +50,13 @@ namespace PersonForm
 			txtName.Text = nameValue.ToString();
 
 		}
+		#region Add Event
 
 		private void Add_Click(object sender, EventArgs e)
 		{
 			string textId = txtId.Text;
 			string textName = txtName.Text;
+			string textEmail = txtEmail.Text;
 			int idValue;
 			if (string.IsNullOrWhiteSpace(textId) || string.IsNullOrWhiteSpace(textName))
 			{
@@ -84,19 +84,22 @@ namespace PersonForm
 						{
 							var person = new Person
 							{
-								Name = textName
+								Name = textName,
+								Emails = new List <Email> { new Email { EmailAddress = textEmail} }
 							};
 							context.People.Add(person);
 							context.SaveChanges();
-							MessageBox.Show($"You are input name: {textName} with id: {context.People.Max(p=>p.Id)}");
+							MessageBox.Show($"You are input name: {textName} with id: {context.People.Max(p=>p.Id)}, email: {textEmail}");
 					
-							dataGridView1.DataSource = context.People.ToList();
+							dataGridView1.DataSource = context.People.Include(p => p.Emails).ToList();
 						}
 					}
 				}
 			}
 		}
+		#endregion
 
+		#region Update Event
 		private void Update_Click(object sender, EventArgs e)
 		{
 			using (var context = new DemoContext())
@@ -104,12 +107,14 @@ namespace PersonForm
 				int idPerson = Convert.ToInt32(txtId.Text);
 				var person = context.People.SingleOrDefault(p => p.Id == idPerson);
 				person.Name = txtName.Text;
+				Email newEmail = new Email() { EmailAddress = txtEmail.Text };
 				context.SaveChanges();
 				dataGridView1.DataSource = context.People.ToList();
 			}
 		}
+		#endregion
 
-
+		#region Delete Event
 		private void Delete_Click(object sender, EventArgs e)
 		{
 			using (var context = new DemoContext())
@@ -118,12 +123,59 @@ namespace PersonForm
 				var person = context.People.SingleOrDefault(p => p.Id == idPerson);
 				context.People.Remove(person);
 				context.SaveChanges();
-				dataGridView1.DataSource = context.People.ToList();
+				dataGridView1.DataSource = context.People.Include(p=>p.Emails).ToList();
 			}
 
 		}
+		#endregion
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+			
+		}
+		#region Emails Method
 
+		public void FindEmail()
+		{
+			string nameInputToFind = txtNameToFind.Text.ToLower();
+			using (var context = new DemoContext())
+			{
+				var query = context.People.Where(p=>p.Name.ToLower() == nameInputToFind).Include(p=>p.Emails).ToList();
+				if (query.Exists(q=>q.Name.ToLower()== nameInputToFind))
+				{
+					dataGridView1.DataSource = query;				
+				}
+				else
+				{
+					MessageBox.Show("Not Found");
+					return;
+				}				
+			}
+		}
 		
+		
+		public void EditEmail()
+		{
+			var result = dataGridView1.DataSource;
+			
+			
+		}
+
+		public void DeleteEmail()
+		{
+		}
+		#endregion
+
+		#region Emails Event
+		private void button3_Click(object sender, EventArgs e)
+		{
+			FindEmail();
+		}
+		#endregion
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			EditEmail();
+		}
 	}
 }
 
