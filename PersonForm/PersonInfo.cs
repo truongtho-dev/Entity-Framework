@@ -134,6 +134,8 @@ namespace PersonForm
 		}
 		#region Emails Method
 
+
+
 		public void FindEmail()
 		{
 			string nameInputToFind = txtNameToFind.Text.ToLower();
@@ -155,9 +157,9 @@ namespace PersonForm
 		
 		public void EditEmail()
 		{
-			var result = dataGridView1.DataSource;
 			
-			
+
+
 		}
 
 		public void DeleteEmail()
