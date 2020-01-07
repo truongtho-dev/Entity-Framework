@@ -15,7 +15,7 @@ namespace DataModel
 		public string Name { get; set; }
 
 		public ICollection<Email> Emails { get; set; }
-		public virtual ICollection<Course> Course { get; set; }
+		public virtual ICollection<Course> Courses { get; set; }
 		public virtual ICollection<PersonCompany> Companies { get; set; }
 		public Contact Contact { get; set; }
 		[NotMapped]
@@ -59,7 +59,7 @@ namespace DataModel
 	public class Course
 	{
 		public int Id { get; set; }
-		public string CourseName { get; set; }
+		public string Name { get; set; }
 
 		public virtual ICollection<Person> Person { get; set; }
 	}
@@ -68,9 +68,9 @@ namespace DataModel
 	public class Company
 	{
 		public int Id { get; set; }
-		public string CompanyName { get; set; }
+		public string Name { get; set; }
 
-		public virtual ICollection<Person> People { get; set; }	
+		public virtual ICollection<PersonCompany> People { get; set; }	
 	}
 	public class PersonCompany   // phia nhieu
 	{
@@ -91,7 +91,7 @@ namespace DataModel
 		public virtual DbSet<Email> Emails { get; set; }
 		public virtual DbSet<Contact> Contacts { get; set; }
 		public virtual DbSet<Course> Courses { get; set; }
-		public virtual DbSet<Course> Companies { get; set; }
+		public virtual DbSet<Company> Companies { get; set; }
 	}
 	
 }
