@@ -217,6 +217,11 @@ namespace PersonForm
 			EditedEmail();
 		}
 		#endregion
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
 	}
 }
 

@@ -14,7 +14,7 @@ namespace DataModel
 		public int Id { get; set; }
 		public string Name { get; set; }
 
-		public ICollection<Email> Emails { get; set; }
+		public virtual ICollection<Email> Emails { get; set; }
 		public virtual ICollection<Course> Courses { get; set; }
 		public virtual ICollection<PersonCompany> Companies { get; set; }
 		public Contact Contact { get; set; }

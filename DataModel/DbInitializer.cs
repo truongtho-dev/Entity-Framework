@@ -21,7 +21,8 @@ namespace DataModel
 					new Email {EmailAddress = "teo2@gmail.com"},
 					new Email {EmailAddress = "teo3@gmail.com"}
 				},
-				Companies = new List<PersonCompany>()
+				Companies = new List<PersonCompany>(),
+				Courses = new List<Course>()
 			};
 			var ty = new Person
 			{
@@ -33,7 +34,8 @@ namespace DataModel
 					new Email {EmailAddress = "ty2@gmail.com"}
 					
 				},
-				Companies = new List<PersonCompany>()
+				Companies = new List<PersonCompany>(),
+				Courses = new List<Course>()
 			};
 			var tun = new Person
 			{
@@ -47,10 +49,11 @@ namespace DataModel
 					new Email {EmailAddress = "tun4@gmail.com"},
 					new Email {EmailAddress = "tun5@gmail.com"}
 				},
-				Companies = new List<PersonCompany>()
+				Companies = new List<PersonCompany>(),
+				Courses = new List<Course>()
 			};
 
-			// create companies
+			
 			var ibm = new Company()
 			{
 				Name = "IBM",
@@ -90,12 +93,12 @@ namespace DataModel
 			var sale = new Course() { Name = "Sale" };
 			var logic = new Course() { Name = "Logic" };
 			//
-			//teo.Courses.Add(tech);
-			//teo.Courses.Add(sale);
-			//tun.Courses.Add(tech);
-			//tun.Courses.Add(sale);
-			//tun.Courses.Add(logic);
-			//ty.Courses.Add(logic);
+			teo.Courses.Add(tech);
+			teo.Courses.Add(sale);
+			tun.Courses.Add(tech);
+			tun.Courses.Add(sale);
+			tun.Courses.Add(logic);
+			ty.Courses.Add(logic);
 			//
 			context.Companies.Add(ibm);
 			context.Companies.Add(omo);

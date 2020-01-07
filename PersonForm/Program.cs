@@ -16,7 +16,7 @@ namespace PersonForm
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new PersonInfo());
+			Application.Run(new ManagePerson());
 		}
 	}
 }
