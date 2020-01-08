@@ -18,13 +18,13 @@ namespace DataModel
 				new List<Email>()
 					{
 						new Email
-							{ EmailAddress = "teo@gmail.com" },
+							{ EmailAddress = "teo@gmail.com", PersonId = 1 },
 						new Email
-							{ EmailAddress = "teo1@gmail.com" },
+							{ EmailAddress = "teo1@gmail.com", PersonId = 1 },
 						new Email
-							{ EmailAddress = "teo2@gmail.com" },
+							{ EmailAddress = "teo2@gmail.com", PersonId = 1 },
 						new Email
-							{ EmailAddress = "teo3@gmail.com" }
+							{ EmailAddress = "teo3@gmail.com", PersonId = 1 }
 					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
@@ -36,11 +36,11 @@ namespace DataModel
 				new List<Email>()
 					{
 						new Email
-							{ EmailAddress = "ty@gmail.com" },
+							{ EmailAddress = "ty@gmail.com", PersonId = 2 },
 						new Email
-							{ EmailAddress = "ty1@gmail.com" },
+							{ EmailAddress = "ty1@gmail.com", PersonId = 2 },
 						new Email
-							{ EmailAddress = "ty2@gmail.com" }
+							{ EmailAddress = "ty2@gmail.com", PersonId = 2 }
 					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
@@ -53,17 +53,17 @@ namespace DataModel
 				new List<Email>()
 					{
 						new Email
-							{ EmailAddress = "tun@gmail.com" },
+							{ EmailAddress = "tun@gmail.com", PersonId = 3 },
 						new Email
-							{ EmailAddress = "tun1@gmail.com" },
+							{ EmailAddress = "tun1@gmail.com", PersonId = 3 },
 						new Email
-							{ EmailAddress = "tun2@gmail.com" },
+							{ EmailAddress = "tun2@gmail.com", PersonId = 3 },
 						new Email
-							{ EmailAddress = "tun3@gmail.com" },
+							{ EmailAddress = "tun3@gmail.com", PersonId = 3 },
 						new Email
-							{ EmailAddress= "tun4@gmail.com" },
+							{ EmailAddress= "tun4@gmail.com", PersonId = 3 },
 						new Email
-							{ EmailAddress = "tun5@gmail.com" }
+							{ EmailAddress = "tun5@gmail.com", PersonId = 3 }
 					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
