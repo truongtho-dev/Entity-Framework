@@ -25,7 +25,7 @@ namespace DataModel
 							{ EmailAddress = "teo2@gmail.com" },
 						new Email
 							{ EmailAddress = "teo3@gmail.com" }
-					},
+					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
 			};
@@ -41,10 +41,11 @@ namespace DataModel
 							{ EmailAddress = "ty1@gmail.com" },
 						new Email
 							{ EmailAddress = "ty2@gmail.com" }
-					},
+					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
 			};
+
 			var tun = new Person
 			{
 				Name = "Tun",
@@ -60,10 +61,10 @@ namespace DataModel
 						new Email
 							{ EmailAddress = "tun3@gmail.com" },
 						new Email
-							{ EmailAddress = "tun4@gmail.com" },
+							{ EmailAddress= "tun4@gmail.com" },
 						new Email
 							{ EmailAddress = "tun5@gmail.com" }
-					},
+					}
 				//Companies = new List<PersonCompany>(),
 				//Courses = new List<Course>()
 			};
