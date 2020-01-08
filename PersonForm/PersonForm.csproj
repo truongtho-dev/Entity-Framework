@@ -63,11 +63,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemoDb2DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DemoDb2DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ManagePerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,24 +92,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="DemoDb2DataSet.xsc">
-      <DependentUpon>DemoDb2DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DemoDb2DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DemoDb2DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DemoDb2DataSet.xss">
-      <DependentUpon>DemoDb2DataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\DataModel.Company.datasource" />
-    <None Include="Properties\DataSources\DataModel.Contact.datasource" />
-    <None Include="Properties\DataSources\DataModel.Course.datasource" />
-    <None Include="Properties\DataSources\DataModel.Email.datasource" />
-    <None Include="Properties\DataSources\DataModel.Person.datasource" />
-    <None Include="Properties\DataSources\DataModel.PersonCompany.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

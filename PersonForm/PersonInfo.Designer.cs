@@ -322,7 +322,6 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button UpdatePerson;
 		private System.Windows.Forms.Button Delete;
-		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource personBindingSource;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox txtEmail;

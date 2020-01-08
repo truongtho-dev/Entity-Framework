@@ -28,72 +28,63 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
+			this.btnCreate = new System.Windows.Forms.Button();
+			this.btnClose = new System.Windows.Forms.Button();
+			this.btnSave = new System.Windows.Forms.Button();
 			this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
-			this.btnSave = new System.Windows.Forms.Button();
-			this.btnEdit = new System.Windows.Forms.Button();
-			this.btnClose = new System.Windows.Forms.Button();
-			this.btnDelete = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.btnEdit = new System.Windows.Forms.Button();
+			this.btnDelete = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.dgvPerson = new System.Windows.Forms.DataGridView();
-			this.label10 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.btnCreate = new System.Windows.Forms.Button();
-			this.dgvCourse = new System.Windows.Forms.DataGridView();
-			this.btnAddCourse = new System.Windows.Forms.Button();
-			this.btnEditCourse = new System.Windows.Forms.Button();
+			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.label10 = new System.Windows.Forms.Label();
+			this.dgvPerson = new System.Windows.Forms.DataGridView();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.btnDeleteCourse = new System.Windows.Forms.Button();
-			this.dgvCompany = new System.Windows.Forms.DataGridView();
-			this.btnAddCompany = new System.Windows.Forms.Button();
-			this.btnEditCompany = new System.Windows.Forms.Button();
+			this.btnEditCourse = new System.Windows.Forms.Button();
+			this.btnAddCourse = new System.Windows.Forms.Button();
+			this.dgvCourse = new System.Windows.Forms.DataGridView();
+			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.btnDeleteCompany = new System.Windows.Forms.Button();
-			this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.coursesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.companiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.contactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.emailsDisplayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnEditCompany = new System.Windows.Forms.Button();
+			this.btnAddCompany = new System.Windows.Forms.Button();
+			this.dgvCompany = new System.Windows.Forms.DataGridView();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-			this.groupControl1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-			this.groupControl2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
 			this.groupControl3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+			this.groupControl2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+			this.groupControl1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
-			this.groupBox4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvPerson)).BeginInit();
+			this.groupBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCourse)).BeginInit();
+			this.groupBox4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvCompany)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.BackColor = System.Drawing.Color.CadetBlue;
+			this.groupBox1.BackColor = System.Drawing.Color.White;
 			this.groupBox1.Controls.Add(this.btnCreate);
 			this.groupBox1.Controls.Add(this.btnClose);
 			this.groupBox1.Controls.Add(this.btnSave);
@@ -108,83 +99,32 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Manage Person";
 			// 
-			// groupControl1
+			// btnCreate
 			// 
-			this.groupControl1.Controls.Add(this.textBox3);
-			this.groupControl1.Controls.Add(this.textBox2);
-			this.groupControl1.Controls.Add(this.textBox1);
-			this.groupControl1.Controls.Add(this.label3);
-			this.groupControl1.Controls.Add(this.label2);
-			this.groupControl1.Controls.Add(this.label1);
-			this.groupControl1.Location = new System.Drawing.Point(25, 41);
-			this.groupControl1.Name = "groupControl1";
-			this.groupControl1.Size = new System.Drawing.Size(370, 128);
-			this.groupControl1.TabIndex = 0;
-			this.groupControl1.Text = "Person Infomation";
+			this.btnCreate.Location = new System.Drawing.Point(97, 524);
+			this.btnCreate.Name = "btnCreate";
+			this.btnCreate.Size = new System.Drawing.Size(75, 30);
+			this.btnCreate.TabIndex = 7;
+			this.btnCreate.Text = "Create";
+			this.btnCreate.UseVisualStyleBackColor = true;
 			// 
-			// label1
+			// btnClose
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(22, 39);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(48, 17);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Name:";
+			this.btnClose.Location = new System.Drawing.Point(320, 524);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(75, 30);
+			this.btnClose.TabIndex = 6;
+			this.btnClose.Text = "Close";
+			this.btnClose.UseVisualStyleBackColor = true;
 			// 
-			// label2
+			// btnSave
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(22, 68);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(88, 17);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "HomePhone:";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(22, 98);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(44, 17);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Email:";
-			// 
-			// groupControl2
-			// 
-			this.groupControl2.Controls.Add(this.comboBox1);
-			this.groupControl2.Controls.Add(this.label4);
-			this.groupControl2.Controls.Add(this.label5);
-			this.groupControl2.Controls.Add(this.label6);
-			this.groupControl2.Location = new System.Drawing.Point(25, 212);
-			this.groupControl2.Name = "groupControl2";
-			this.groupControl2.Size = new System.Drawing.Size(370, 87);
-			this.groupControl2.TabIndex = 3;
-			this.groupControl2.Text = "Course";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(22, 93);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(0, 17);
-			this.label4.TabIndex = 2;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(22, 62);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(0, 17);
-			this.label5.TabIndex = 1;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(18, 45);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(48, 17);
-			this.label6.TabIndex = 0;
-			this.label6.Text = "Name:";
+			this.btnSave.Location = new System.Drawing.Point(210, 524);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Size = new System.Drawing.Size(75, 30);
+			this.btnSave.TabIndex = 4;
+			this.btnSave.Text = "Save";
+			this.btnSave.UseVisualStyleBackColor = true;
 			// 
 			// groupControl3
 			// 
@@ -198,6 +138,21 @@
 			this.groupControl3.Size = new System.Drawing.Size(370, 132);
 			this.groupControl3.TabIndex = 3;
 			this.groupControl3.Text = "Company";
+			// 
+			// textBox4
+			// 
+			this.textBox4.Location = new System.Drawing.Point(139, 76);
+			this.textBox4.Name = "textBox4";
+			this.textBox4.Size = new System.Drawing.Size(187, 23);
+			this.textBox4.TabIndex = 6;
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Location = new System.Drawing.Point(139, 44);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(121, 24);
+			this.comboBox2.TabIndex = 4;
 			// 
 			// label7
 			// 
@@ -225,14 +180,112 @@
 			this.label9.TabIndex = 0;
 			this.label9.Text = "Name:";
 			// 
-			// btnSave
+			// groupControl2
 			// 
-			this.btnSave.Location = new System.Drawing.Point(210, 524);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Size = new System.Drawing.Size(75, 30);
-			this.btnSave.TabIndex = 4;
-			this.btnSave.Text = "Save";
-			this.btnSave.UseVisualStyleBackColor = true;
+			this.groupControl2.Controls.Add(this.comboBox1);
+			this.groupControl2.Controls.Add(this.label4);
+			this.groupControl2.Controls.Add(this.label5);
+			this.groupControl2.Controls.Add(this.label6);
+			this.groupControl2.Location = new System.Drawing.Point(25, 212);
+			this.groupControl2.Name = "groupControl2";
+			this.groupControl2.Size = new System.Drawing.Size(370, 87);
+			this.groupControl2.TabIndex = 3;
+			this.groupControl2.Text = "Course";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(139, 42);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(121, 24);
+			this.comboBox1.TabIndex = 3;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(22, 93);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(0, 17);
+			this.label4.TabIndex = 2;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(22, 62);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(0, 17);
+			this.label5.TabIndex = 1;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(18, 45);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(48, 17);
+			this.label6.TabIndex = 0;
+			this.label6.Text = "Name:";
+			// 
+			// groupControl1
+			// 
+			this.groupControl1.Controls.Add(this.textBox3);
+			this.groupControl1.Controls.Add(this.textBox2);
+			this.groupControl1.Controls.Add(this.textBox1);
+			this.groupControl1.Controls.Add(this.label3);
+			this.groupControl1.Controls.Add(this.label2);
+			this.groupControl1.Controls.Add(this.label1);
+			this.groupControl1.Location = new System.Drawing.Point(25, 41);
+			this.groupControl1.Name = "groupControl1";
+			this.groupControl1.Size = new System.Drawing.Size(370, 128);
+			this.groupControl1.TabIndex = 0;
+			this.groupControl1.Text = "Person Infomation";
+			// 
+			// textBox3
+			// 
+			this.textBox3.Location = new System.Drawing.Point(139, 94);
+			this.textBox3.Name = "textBox3";
+			this.textBox3.Size = new System.Drawing.Size(187, 23);
+			this.textBox3.TabIndex = 5;
+			// 
+			// textBox2
+			// 
+			this.textBox2.Location = new System.Drawing.Point(139, 65);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(187, 23);
+			this.textBox2.TabIndex = 4;
+			// 
+			// textBox1
+			// 
+			this.textBox1.Location = new System.Drawing.Point(139, 33);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(187, 23);
+			this.textBox1.TabIndex = 3;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(22, 98);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(44, 17);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Email:";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(22, 68);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(88, 17);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "HomePhone:";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(22, 39);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(48, 17);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Name:";
 			// 
 			// btnEdit
 			// 
@@ -243,15 +296,6 @@
 			this.btnEdit.Text = "Edit";
 			this.btnEdit.UseVisualStyleBackColor = true;
 			// 
-			// btnClose
-			// 
-			this.btnClose.Location = new System.Drawing.Point(320, 524);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(75, 30);
-			this.btnClose.TabIndex = 6;
-			this.btnClose.Text = "Close";
-			this.btnClose.UseVisualStyleBackColor = true;
-			// 
 			// btnDelete
 			// 
 			this.btnDelete.Location = new System.Drawing.Point(673, 230);
@@ -261,53 +305,9 @@
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.UseVisualStyleBackColor = true;
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(139, 33);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(187, 23);
-			this.textBox1.TabIndex = 3;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(139, 65);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(187, 23);
-			this.textBox2.TabIndex = 4;
-			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(139, 94);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(187, 23);
-			this.textBox3.TabIndex = 5;
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(139, 42);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 24);
-			this.comboBox1.TabIndex = 3;
-			// 
-			// comboBox2
-			// 
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(139, 44);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(121, 24);
-			this.comboBox2.TabIndex = 4;
-			// 
-			// textBox4
-			// 
-			this.textBox4.Location = new System.Drawing.Point(139, 76);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(187, 23);
-			this.textBox4.TabIndex = 6;
-			// 
 			// groupBox2
 			// 
-			this.groupBox2.BackColor = System.Drawing.Color.CadetBlue;
+			this.groupBox2.BackColor = System.Drawing.Color.White;
 			this.groupBox2.Controls.Add(this.button1);
 			this.groupBox2.Controls.Add(this.textBox5);
 			this.groupBox2.Controls.Add(this.label10);
@@ -321,6 +321,44 @@
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "List Person";
+			// 
+			// button1
+			// 
+			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(403, 233);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(86, 27);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "Search";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// textBox5
+			// 
+			this.textBox5.Location = new System.Drawing.Point(210, 233);
+			this.textBox5.Name = "textBox5";
+			this.textBox5.Size = new System.Drawing.Size(187, 27);
+			this.textBox5.TabIndex = 6;
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(103, 236);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(99, 20);
+			this.label10.TabIndex = 6;
+			this.label10.Text = "Input Name:";
+			// 
+			// dgvPerson
+			// 
+			this.dgvPerson.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.dgvPerson.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvPerson.Location = new System.Drawing.Point(52, 41);
+			this.dgvPerson.Name = "dgvPerson";
+			this.dgvPerson.RowTemplate.Height = 24;
+			this.dgvPerson.Size = new System.Drawing.Size(696, 169);
+			this.dgvPerson.TabIndex = 0;
+			this.dgvPerson.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPerson_CellContentClick);
 			// 
 			// groupBox3
 			// 
@@ -337,6 +375,43 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Course Infomation";
 			// 
+			// btnDeleteCourse
+			// 
+			this.btnDeleteCourse.Location = new System.Drawing.Point(263, 226);
+			this.btnDeleteCourse.Name = "btnDeleteCourse";
+			this.btnDeleteCourse.Size = new System.Drawing.Size(75, 30);
+			this.btnDeleteCourse.TabIndex = 11;
+			this.btnDeleteCourse.Text = "Delete";
+			this.btnDeleteCourse.UseVisualStyleBackColor = true;
+			// 
+			// btnEditCourse
+			// 
+			this.btnEditCourse.Location = new System.Drawing.Point(157, 226);
+			this.btnEditCourse.Name = "btnEditCourse";
+			this.btnEditCourse.Size = new System.Drawing.Size(75, 30);
+			this.btnEditCourse.TabIndex = 10;
+			this.btnEditCourse.Text = "Edit";
+			this.btnEditCourse.UseVisualStyleBackColor = true;
+			// 
+			// btnAddCourse
+			// 
+			this.btnAddCourse.Location = new System.Drawing.Point(52, 226);
+			this.btnAddCourse.Name = "btnAddCourse";
+			this.btnAddCourse.Size = new System.Drawing.Size(75, 30);
+			this.btnAddCourse.TabIndex = 8;
+			this.btnAddCourse.Text = "Add";
+			this.btnAddCourse.UseVisualStyleBackColor = true;
+			// 
+			// dgvCourse
+			// 
+			this.dgvCourse.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.dgvCourse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvCourse.Location = new System.Drawing.Point(25, 37);
+			this.dgvCourse.Name = "dgvCourse";
+			this.dgvCourse.RowTemplate.Height = 24;
+			this.dgvCourse.Size = new System.Drawing.Size(333, 169);
+			this.dgvCourse.TabIndex = 9;
+			// 
 			// groupBox4
 			// 
 			this.groupBox4.BackColor = System.Drawing.Color.LightBlue;
@@ -352,117 +427,14 @@
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Companies Infomation";
 			// 
-			// dgvPerson
+			// btnDeleteCompany
 			// 
-			this.dgvPerson.AutoGenerateColumns = false;
-			this.dgvPerson.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dgvPerson.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvPerson.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.coursesDataGridViewTextBoxColumn,
-            this.companiesDataGridViewTextBoxColumn,
-            this.contactDataGridViewTextBoxColumn,
-            this.emailsDisplayDataGridViewTextBoxColumn});
-			this.dgvPerson.DataSource = this.personBindingSource;
-			this.dgvPerson.Location = new System.Drawing.Point(52, 41);
-			this.dgvPerson.Name = "dgvPerson";
-			this.dgvPerson.RowTemplate.Height = 24;
-			this.dgvPerson.Size = new System.Drawing.Size(696, 169);
-			this.dgvPerson.TabIndex = 0;
-			this.dgvPerson.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPerson_CellContentClick);
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(103, 236);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(99, 20);
-			this.label10.TabIndex = 6;
-			this.label10.Text = "Input Name:";
-			// 
-			// textBox5
-			// 
-			this.textBox5.Location = new System.Drawing.Point(210, 233);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(187, 27);
-			this.textBox5.TabIndex = 6;
-			// 
-			// button1
-			// 
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(403, 233);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(86, 27);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "Search";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// btnCreate
-			// 
-			this.btnCreate.Location = new System.Drawing.Point(97, 524);
-			this.btnCreate.Name = "btnCreate";
-			this.btnCreate.Size = new System.Drawing.Size(75, 30);
-			this.btnCreate.TabIndex = 7;
-			this.btnCreate.Text = "Create";
-			this.btnCreate.UseVisualStyleBackColor = true;
-			// 
-			// dgvCourse
-			// 
-			this.dgvCourse.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dgvCourse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvCourse.Location = new System.Drawing.Point(25, 37);
-			this.dgvCourse.Name = "dgvCourse";
-			this.dgvCourse.RowTemplate.Height = 24;
-			this.dgvCourse.Size = new System.Drawing.Size(333, 169);
-			this.dgvCourse.TabIndex = 9;
-			// 
-			// btnAddCourse
-			// 
-			this.btnAddCourse.Location = new System.Drawing.Point(52, 226);
-			this.btnAddCourse.Name = "btnAddCourse";
-			this.btnAddCourse.Size = new System.Drawing.Size(75, 30);
-			this.btnAddCourse.TabIndex = 8;
-			this.btnAddCourse.Text = "Add";
-			this.btnAddCourse.UseVisualStyleBackColor = true;
-			// 
-			// btnEditCourse
-			// 
-			this.btnEditCourse.Location = new System.Drawing.Point(157, 226);
-			this.btnEditCourse.Name = "btnEditCourse";
-			this.btnEditCourse.Size = new System.Drawing.Size(75, 30);
-			this.btnEditCourse.TabIndex = 10;
-			this.btnEditCourse.Text = "Edit";
-			this.btnEditCourse.UseVisualStyleBackColor = true;
-			// 
-			// btnDeleteCourse
-			// 
-			this.btnDeleteCourse.Location = new System.Drawing.Point(263, 226);
-			this.btnDeleteCourse.Name = "btnDeleteCourse";
-			this.btnDeleteCourse.Size = new System.Drawing.Size(75, 30);
-			this.btnDeleteCourse.TabIndex = 11;
-			this.btnDeleteCourse.Text = "Delete";
-			this.btnDeleteCourse.UseVisualStyleBackColor = true;
-			// 
-			// dgvCompany
-			// 
-			this.dgvCompany.BackgroundColor = System.Drawing.SystemColors.Control;
-			this.dgvCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvCompany.Location = new System.Drawing.Point(25, 37);
-			this.dgvCompany.Name = "dgvCompany";
-			this.dgvCompany.RowTemplate.Height = 24;
-			this.dgvCompany.Size = new System.Drawing.Size(314, 169);
-			this.dgvCompany.TabIndex = 12;
-			// 
-			// btnAddCompany
-			// 
-			this.btnAddCompany.Location = new System.Drawing.Point(59, 226);
-			this.btnAddCompany.Name = "btnAddCompany";
-			this.btnAddCompany.Size = new System.Drawing.Size(75, 30);
-			this.btnAddCompany.TabIndex = 12;
-			this.btnAddCompany.Text = "Add";
-			this.btnAddCompany.UseVisualStyleBackColor = true;
+			this.btnDeleteCompany.Location = new System.Drawing.Point(248, 226);
+			this.btnDeleteCompany.Name = "btnDeleteCompany";
+			this.btnDeleteCompany.Size = new System.Drawing.Size(75, 30);
+			this.btnDeleteCompany.TabIndex = 14;
+			this.btnDeleteCompany.Text = "Delete";
+			this.btnDeleteCompany.UseVisualStyleBackColor = true;
 			// 
 			// btnEditCompany
 			// 
@@ -473,55 +445,24 @@
 			this.btnEditCompany.Text = "Edit";
 			this.btnEditCompany.UseVisualStyleBackColor = true;
 			// 
-			// btnDeleteCompany
+			// btnAddCompany
 			// 
-			this.btnDeleteCompany.Location = new System.Drawing.Point(248, 226);
-			this.btnDeleteCompany.Name = "btnDeleteCompany";
-			this.btnDeleteCompany.Size = new System.Drawing.Size(75, 30);
-			this.btnDeleteCompany.TabIndex = 14;
-			this.btnDeleteCompany.Text = "Delete";
-			this.btnDeleteCompany.UseVisualStyleBackColor = true;
+			this.btnAddCompany.Location = new System.Drawing.Point(59, 226);
+			this.btnAddCompany.Name = "btnAddCompany";
+			this.btnAddCompany.Size = new System.Drawing.Size(75, 30);
+			this.btnAddCompany.TabIndex = 12;
+			this.btnAddCompany.Text = "Add";
+			this.btnAddCompany.UseVisualStyleBackColor = true;
 			// 
-			// personBindingSource
+			// dgvCompany
 			// 
-			this.personBindingSource.DataSource = typeof(DataModel.Person);
-			// 
-			// idDataGridViewTextBoxColumn
-			// 
-			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-			// 
-			// nameDataGridViewTextBoxColumn
-			// 
-			this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-			// 
-			// coursesDataGridViewTextBoxColumn
-			// 
-			this.coursesDataGridViewTextBoxColumn.DataPropertyName = "Courses";
-			this.coursesDataGridViewTextBoxColumn.HeaderText = "Courses";
-			this.coursesDataGridViewTextBoxColumn.Name = "coursesDataGridViewTextBoxColumn";
-			// 
-			// companiesDataGridViewTextBoxColumn
-			// 
-			this.companiesDataGridViewTextBoxColumn.DataPropertyName = "Companies";
-			this.companiesDataGridViewTextBoxColumn.HeaderText = "Companies";
-			this.companiesDataGridViewTextBoxColumn.Name = "companiesDataGridViewTextBoxColumn";
-			// 
-			// contactDataGridViewTextBoxColumn
-			// 
-			this.contactDataGridViewTextBoxColumn.DataPropertyName = "Contact";
-			this.contactDataGridViewTextBoxColumn.HeaderText = "Contact";
-			this.contactDataGridViewTextBoxColumn.Name = "contactDataGridViewTextBoxColumn";
-			// 
-			// emailsDisplayDataGridViewTextBoxColumn
-			// 
-			this.emailsDisplayDataGridViewTextBoxColumn.DataPropertyName = "EmailsDisplay";
-			this.emailsDisplayDataGridViewTextBoxColumn.HeaderText = "EmailsDisplay";
-			this.emailsDisplayDataGridViewTextBoxColumn.Name = "emailsDisplayDataGridViewTextBoxColumn";
-			this.emailsDisplayDataGridViewTextBoxColumn.ReadOnly = true;
+			this.dgvCompany.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.dgvCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvCompany.Location = new System.Drawing.Point(25, 37);
+			this.dgvCompany.Name = "dgvCompany";
+			this.dgvCompany.RowTemplate.Height = 24;
+			this.dgvCompany.Size = new System.Drawing.Size(314, 169);
+			this.dgvCompany.TabIndex = 12;
 			// 
 			// ManagePerson
 			// 
@@ -536,23 +477,22 @@
 			this.Text = "ManagePerson";
 			this.Load += new System.EventHandler(this.ManagePerson_Load);
 			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-			this.groupControl1.ResumeLayout(false);
-			this.groupControl1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-			this.groupControl2.ResumeLayout(false);
-			this.groupControl2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
 			this.groupControl3.ResumeLayout(false);
 			this.groupControl3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+			this.groupControl2.ResumeLayout(false);
+			this.groupControl2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+			this.groupControl1.ResumeLayout(false);
+			this.groupControl1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
-			this.groupBox3.ResumeLayout(false);
-			this.groupBox4.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgvPerson)).EndInit();
+			this.groupBox3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgvCourse)).EndInit();
+			this.groupBox4.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgvCompany)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -598,12 +538,5 @@
 		private System.Windows.Forms.Button btnEditCompany;
 		private System.Windows.Forms.Button btnAddCompany;
 		private System.Windows.Forms.DataGridView dgvCompany;
-		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn coursesDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn companiesDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn contactDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn emailsDisplayDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource personBindingSource;
 	}
 }
