@@ -14,24 +14,24 @@ namespace DataModel
 		public int Id { get; set; }
 		public string Name { get; set; }
 
-		public virtual ICollection<Email> Emails { get; set; }
+		//public virtual ICollection<Email> Emails { get; set; }
 		//public virtual ICollection<Course> Courses { get; set; }
 		//public virtual ICollection<PersonCompany> Companies { get; set; }
 		//public Contact Contact { get; set; }
-		[NotMapped]
-		public string EmailsDisplay {
-			get
-			{
-				string display = null;
-				if (Emails != null)
-				{
-					foreach (var e in Emails)
-					{
-						display += e.EmailAddress + Environment.NewLine;
-					}
-				}
-				return display;
-			}
-		}		
+		//[NotMapped]
+		//public string EmailsDisplay {
+		//	get
+		//	{
+		//		string display = null;
+		//		if (Emails != null)
+		//		{
+		//			foreach (var e in Emails)
+		//			{
+		//				display += e.EmailAddress + Environment.NewLine;
+		//			}
+		//		}
+		//		return display;
+		//	}
+		//}		
 	}
 }
